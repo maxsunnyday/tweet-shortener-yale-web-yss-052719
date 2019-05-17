@@ -17,9 +17,12 @@ end
 def word_substituter(string)
   array = string.split(" ")
   short_array = []
-  dictionary.keys
   array.collect do |word|
-
+    if dictionary.keys.include?(word)
+      short_array << dictionary[word]
+    else
+      short_array << word
+    end
   end
   array.join(" ")
 end
