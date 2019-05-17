@@ -17,12 +17,9 @@ end
 def word_substituter(string)
   array = string.split(" ")
   short_array = []
+  dictionary.keys
   array.collect do |word|
-    dictionary.each do |key, value|
-      if key == word
-        word = value
-      end
-    end
+    
   end
   array.join(" ")
 end
