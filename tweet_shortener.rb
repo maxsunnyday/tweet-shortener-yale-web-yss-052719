@@ -19,7 +19,7 @@ def word_substituter(string)
   short_array = []
   dictionary.keys
   array.collect do |word|
-    
+
   end
   array.join(" ")
 end
