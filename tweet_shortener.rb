@@ -13,3 +13,14 @@ def dictionary
     "and" => "&"
   }
 end
+
+def word_substituter(string)
+  array = string.split(" ")
+  array.collect do |word|
+    dictionary.each do |key, value|
+      if key == word
+        word = value
+      end
+    end
+  end
+end
