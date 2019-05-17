@@ -29,7 +29,7 @@ end
 
 def bulk_tweet_shortener(tweets)
   short_tweets = []
-  puts tweets.each do |tweet|
+  tweets.each do |tweet|
     short_tweets << word_substituter(tweet)
   end
 end
